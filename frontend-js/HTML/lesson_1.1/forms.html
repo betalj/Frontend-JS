@@ -1,139 +1,87 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../../css/homework-1-css/styles.css">
-        <title>Homework-1.1 Forms</title>
+        <title>Урок №1</title>
     </head>
     <body>
-        <div class="header">
-            <h1>Lesson "Forms": tags and their attributes.</h1>
-            <h2>Tell about yourself ...</h2>
-            <p>Сreate a similar form. For the purpose of demonstration, fictional ones are also quite appropriate.</p>
-        </div>
-        <section class="form-yourself">
-            <div class="form-header">Briefly about yourself</div>
-            <br>
-            <form action="">
-                <div class="input-block">
-                    <div class="input-block-name"><span>Name: </span></div>
-                    
-                    <input type="text">
-                </div>
-                <br>
-                <div class="input-block">
-                    <div class="input-block-name"><span>Surname: </span></div>
-                    <input type="text">
-                </div>
-                <br>
-                <div class="input-block">
-                    <div class="input-block-name"><span>Gender: </span></div>
-                    <input type="radio" name="Gender" value="male"><span>male</span>
-                    <input type="radio" name="Gender" value="feminine"><span>feminine</span>
-                </div>
-                <br>
-                <div class="input-block">
-                    <div class="input-block-name"><span>Years: </span></div>
-                    <input type="number" name="Years" value="1" min="1" max="100" step="1">
-                </div>
-            </form>
-        </section>
-
-        <section class="form-more-yourself">
-                <div class="form-header">More about yourself</div>
-                <br>
-                <form action="">
-                    <div class="input-block gender-choice">
-                        <div>
-                            <input type="radio" name="Gender" value="boy"><span>Young Boy</span>
-                        </div>
-                        <div>
-                            <input type="radio" name="Gender" value="girl"><span>Girl</span>
-                        </div>                   
-                    </div>
-                    <br>
-                    <div class="input-block profile-block">                        
-                        <div><input class="profile-input" type="text"><span>Date of Birth</span></div>
-                        <div><input class="profile-input" type="text"><span>Family status</span></div>
-                        <div><input class="profile-input" type="text"><span>Social status</span></div>
-                        <div><input class="profile-input" type="text"><span>Residence    </span></div>
-                    </div>
-                    <br>
-                    <div class="input-block checkbox-profile">
-                        <h3>What do you usually do on the weekends?</h3>
-                        <div><input type="checkbox"><span>Sleep</span></div>
-                        <div><input type="checkbox"><span>Walking with friends</span></div>
-                        <div><input type="checkbox"><span>Go fishing</span></div>
-                        <div><input type="checkbox"><span>Playing games</span></div>
-                    </div>
-                    <br>
-                    <div class="input-block book-choice">
-                        <h3>Tell about forms in the book dedicated to HTML: </h3>
-                        <div>
-                            <select>
-                                <option disabled>html</option>
-                                <option>Site frequency: </option>
-                                <option>Site frequency: </option>
-                                <option>Site frequency: </option>
-                                <option>Site frequency: </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="input-block book-choice">
-                        <h3>How many books have you read in your life</h3>
-                        <div><input type="radio" name="Choice-bock" value=""><span>0-10 </span></div>
-                        <div><input type="radio" name="Choice-bock" value=""><span>11-20</span></div>
-                        <div><input type="radio" name="Choice-bock" value=""><span>21-50</span></div>
-                        <div><input type="radio" name="Choice-bock" value=""><span>50+  </span></div>
-                    </div>
-                    <div class="input-block book-choice">
-                        <h3>Your comments: </h3>
-                        <textarea rows="10" cols="20" name="text"></textarea>
-                    </div>
-                    <div class="input-block">
-                        <select size="3">
-                            <option disabled>first position</option>
-                            <option>second position</option>
-                            <option>third position </option>
-                            <option>fourth position</option>
-                            <option>fifth position </option>
-                        </select>
-                    </div>
+        <h1>Урок "Формы": теги и их атрибуты.</h1>
+        <h2>Расскажите немного о себе...</h2>
+        <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+        <fieldset>
+            <legend><h4>Коротко о себе</h4></legend>
+                <form>
+                    Имя: <input type="text" size="30"/>
+                    Фамилия: <input type="text" size="30"/></p>
+                    Пол: <input type="radio"/> мужской
+                    <input type="radio"/> женский
+                    Возраст: <input type="text" size="1"/> лет
                 </form>
-            </section>
-
-            <section class="form-end">
-                    <div class="form-header">In the end</div>
-                    <br>
-                    <form action="">
-                        <div class="input-block email-block">
-                            <div>
-                                <input type="text" size="30" placeholder="This field was entered before you">
-                            </div>
-                            <div>
-                                <label for="email">Email: </label>
-                            </div>
-                            <div>
-                                <input id="email" type="text" size="30" name="email">
-                            </div>
-                        </div>
-                        <br>
-                        <div class="input-block subscribe-block">
-                            <h3>Do you want to subscribe to the most fashionable spamming?</h3>
-                            <span>Select a category</span>
-                            <div><input type="checkbox"><span>Equipment</span></div>
-                            <div><input type="checkbox"><span>How to cook dinner</span></div>
-                            <div><input type="checkbox"><span>Earn a million in two days</span></div>
-                            <h3>How difficult is the task:</h3>
-                            <div><input type="radio" name="Choice-task" value=""><span>Easy </span></div>
-                            <div><input type="radio" name="Choice-task" value=""><span>normal</span></div>
-                            <div><input type="radio" name="Choice-task" value=""><span>Hard</span></div>
-                        </div>
-                    </form>
-                </section>
-                <div class="submit">
-                    <button class="btn-submit" type="submit">Submit</button>
-                </div>
-                
-                
+        </fieldset>
+        <fieldset>
+            <legend><h4>Подробнее о себе</h4></legend>
+                <form>
+                    <input type="radio"/> Молодой человек<br/>
+                    <input type="radio"/> Девушка<br/>
+                    <input type="text"/> Дата рождения<br/>
+                    <input type="text"/> Семейное положение<br/>
+                    <input type="text"/> Социальный статус<br/>
+                    <input type="text"> Местожительство<br/>
+                </form>
+                <h4>Что вы обычно делаете на выходных:</h4>
+            <br/>
+                <form>
+                    <input type="checkbox"/> Сплю<br/>
+                    <input type="checkbox"/> Гуляю с друзьями<br/>
+                    <input type="checkbox"/> Хожу на рыбалку<br/>
+                    <input type="checkbox"/> Играю в игры<br/>
+                </form>
+                <h4>Рассказать о формах в книге, посвященной HTML:</h4>
+            <br/>
+                <form>
+                    <select>
+                        <option>Site frequency</option>
+                    </select>
+                </form>
+                <h4>Сколько книг вы прочитали за свою жизнь:</h4>
+            <br/>
+                <form>
+                    <input type="radio"/> 0-10<br/>
+                    <input type="radio"/> 11-20<br/>
+                    <input type="radio"/> 21-50<br/>
+                    <input type="radio"/> 50+<br/>
+                </form>
+                <h4>Ваши комментарии:</h4><br/>
+                <form>
+                    <textarea style="width:300px; height:150px;"></textarea>
+                    <br/>
+                    <select multiple>
+                    <option>Первая позиция</option>
+                    <option>Вторая позиция</option>
+                    <option>Третья позиция</option>
+                </select>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend><b>И в заключении</b></legend>
+                <form>
+                    <input placeholder="Это поле было введено до вас" size="30"><br/>
+                    Email:<br/>
+                    <input type="text" size="30"/>
+                    <p><b>Хотите подписаться на самую модную рассылку спама?</b><p>
+                        <p><i>Выберите категории</i><p>
+                        <br/>
+                            <input type="checkbox"/>Оборудование<br/>
+                            <input type="checkbox"/>Как приготовить обеды<br/>
+                            <input type="checkbox"/>Заработай миллион за два дня!<br/>
+                    <p><b>На сколько сложная задача:</b><p>
+                        <input type="radio"/>Совсем нет<br/>
+                        <input type="radio"/>Так себе<br/>
+                        <input type="radio"value=""/> Еле справились<br/>
+                </form>
+        </fieldset>
+        <form>
+            <input type="submit" value="Отправить"/>
+        </form>
+    </body>
 </html>
